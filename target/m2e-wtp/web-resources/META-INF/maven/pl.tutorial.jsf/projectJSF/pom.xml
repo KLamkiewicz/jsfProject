@@ -6,6 +6,7 @@
   <name>JSF Tutorial</name>
   <description>Learning JSF</description>
   <packaging>war</packaging>
+  
   <dependencies>
   	<dependency>
 		<groupId>com.sun.faces</groupId>
@@ -24,5 +25,18 @@
   	</dependency>
 
   </dependencies>
-
+  
+  <build>
+	<finalName>jsfProject</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
 </project>
